@@ -1,0 +1,13 @@
+[package]
+name = "is_even"
+version = "1.0.0"
+authors = ["baWedekind <barendwedekind@hotmail.co.uk>"]
+description = "Returns true if the given number is odd."
+repository = "https://github.com/baWedekind/is-even"
+readme = "README.md"
+keywords = ["integer", "even", "odd", "math", "numeric"]
+license = "MIT"
+edition = "2018"
+
+[dependencies]
+is-odd = "1.0.0"
