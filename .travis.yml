@@ -1,0 +1,16 @@
+language: rust
+rust:
+  - stable
+  - beta
+  - nightly
+cache: cargo
+sudo: false
+matrix:
+  allow_failures:
+    - rust: nightly
+  fast_finish: true
+git:
+  depth: 1
+script:
+  - cargo build --verbose --all
+  - cargo test --verbose --all
