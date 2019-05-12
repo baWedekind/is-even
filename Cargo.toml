@@ -1,5 +1,5 @@
 [package]
-name = "is_even"
+name = "is-even"
 version = "1.0.0"
 authors = ["baWedekind <barendwedekind@hotmail.co.uk>"]
 description = "Returns true if the given number is odd."
