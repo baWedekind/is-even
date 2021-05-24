@@ -147,4 +147,43 @@ mod tests {
         _i=3;
         assert!(!_i.is_even());
     }
+    
+    #[test]
+    fn number_i128_is_even() {
+        let mut _i : i128 = -2;
+        assert!(_i.is_even());
+
+        _i=-1;
+        assert!(!_i.is_even());
+
+        _i=0;
+        assert!(_i.is_even());
+
+        _i=1;
+        assert!(!_i.is_even());
+
+        _i=2;
+        assert!(_i.is_even());
+
+        _i=3;
+        assert!(!_i.is_even());
+
+        _i=10_000_000;
+        assert!(_i.is_even());
+    }
+    
+    #[test]
+    fn number_u128_is_even() {
+        let mut _i : u128 = 0;
+        assert!(_i.is_even());
+
+        _i=1;
+        assert!(!_i.is_even());
+
+        _i=2;
+        assert!(_i.is_even());
+
+        _i=3;
+        assert!(!_i.is_even());
+    }
 }
